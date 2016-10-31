@@ -3,6 +3,7 @@ public class Triangle {
 	private double side1 = 1;
 	private double side2 = 1;
 	private double side3 = 1;
+	private double side4 =2;
 
 	Triangle() {
 
