@@ -6,7 +6,10 @@ public class TriangleDriver {
 
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Let's make a triangle:");
-		/**Precondition: user enters values that can calculate the area of a triangle*/
+		/**
+		 * Precondition: user enters values that can calculate the area of a
+		 * triangle
+		 */
 		System.out.print("Enter the length of side 1: ");
 		double side1 = kb.nextDouble();
 		System.out.print("Enter the length of side 2: ");
