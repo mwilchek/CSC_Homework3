@@ -1,9 +1,9 @@
 // Source: http://www.quickprogrammingtips.com/java/how-to-calculate-area-of-triangle-in-java.html
 public class Triangle
 	extends SimpleGeometricObject{
-	private double side1 = 1;
-	private double side2 = 1;
-	private double side3 = 1;
+	protected double side1 = 1;
+	protected double side2 = 1;
+	protected double side3 = 1;
 	
 
 	Triangle() {

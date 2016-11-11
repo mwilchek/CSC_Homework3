@@ -11,8 +11,8 @@ public class LoanDriver {
 		System.out.print("Enter loan amount, for example, 120000.95: ");
 		double loanAmount = kb.nextDouble();
 		Loan loan = new Loan(annualInterestRate, numberOfYears, loanAmount);
-
-		System.out.printf("The loan was created on %s\n" + "The monthly payment is %.2f\nThe total payment is %.2f\n",
+		System.out.println();
+		System.out.printf("The loan was created on %s\n" + "The monthly payment is: %.2f\nThe total payment is: %.2f\n",
 				loan.getLoanDate().toString(), loan.getMonthlyPayment(), loan.getTotalPayment());
 		kb.close();
 	}
