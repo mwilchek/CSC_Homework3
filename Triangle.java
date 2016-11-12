@@ -1,10 +1,8 @@
 // Source: http://www.quickprogrammingtips.com/java/how-to-calculate-area-of-triangle-in-java.html
-public class Triangle
-	extends SimpleGeometricObject{
+public class Triangle extends SimpleGeometricObject {
 	protected double side1 = 1;
 	protected double side2 = 1;
 	protected double side3 = 1;
-	
 
 	Triangle() {
 
@@ -15,8 +13,8 @@ public class Triangle
 		side2 = s2;
 		side3 = s3;
 	}
-	
-	Triangle(double s1, double s2, double s3, String color , boolean filled){
+
+	Triangle(double s1, double s2, double s3, String color, boolean filled) {
 		side1 = s1;
 		side2 = s2;
 		side3 = s3;
@@ -46,7 +44,8 @@ public class Triangle
 	}
 
 	public String toString() {
-		return "Triangle side1 = " + getSide1() + " side2 = " + getSide2() + " side3 = " + getSide3() + super.toString();
+		return "Triangle side1 = " + getSide1() + " " + " side2 = " + getSide2() + " " + " side3 = " + getSide3() + " "
+				+ super.toString();
 	}
 
 }
