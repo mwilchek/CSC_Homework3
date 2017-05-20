@@ -24,10 +24,15 @@ public class OpenFavorites {
 				System.exit(0);
 			} else {
 				Scanner input = new Scanner(favoriteSites);
-				while (input.hasNextLine()) {
+				
+				while (input.hasNextLine()) 
+				{
 					String urlString = input.nextLine();
 					websites.add(urlString);
+				
 				}
+				
+				input.close();
 			}
 
 			user.close();
@@ -44,12 +49,15 @@ public class OpenFavorites {
 				System.out.println();
 				System.out.println("Add another? (Yes or No)");
 				choice = kb.next();
-			} while (choice.equalsIgnoreCase("yes"));
-
+			   } while (choice.equalsIgnoreCase("yes"));
+			
 			try (
 					// Create a file
-					java.io.PrintWriter output = new java.io.PrintWriter(favoriteSites);) {
-				for (int i = 0; i < websites.size(); i++) {
+					java.io.PrintWriter output = new java.io.PrintWriter(favoriteSites);
+				) 
+			{
+				for (int i = 0; i < websites.size(); i++) 
+				{
 					output.println(websites.get(i));
 				}
 			}
